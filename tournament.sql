@@ -12,7 +12,6 @@
 DROP DATABASE IF EXISTS tournament;
 CREATE DATABASE tournament;
 \c tournament;
--- DROP VIEW  playerrecord;
 
 -- Storage of players with unique ID's as primary key
 CREATE TABLE players(
