@@ -6,11 +6,19 @@ Requirements
 This project requires the user to set up a PostgreSQL database. Udacity provides a Vagrant config: 
 https://www.udacity.com/course/viewer#!/c-nd004/l-3532028970/m-3631428767.
 
+Before you can execute the Python code, the database must first be built using psql. Instructions in 
+the next section.
+
 
 How to Run Project
 ------------------
 Navigate to the folder you downloaded, ensuring that any zipped files are unzipped. 
 Ensure all downloaded files are contained in the same folder.
-Open your command line and change directory to the folder that contains all the files.
-Power on and sign into the virtual machine.
-From the command line run the python file tournament.py ($ python tournament_test.py) to test the database. 
+Using the Udacity-provided config, navigate to the VM (should be in the full-stack-nanodegree-vm/tournament directory)
+and power on and and sign into the machine.
+To initially create the database, run the command 'psql' to open up the psql command line interface. Then import 
+the database using the command '\i tournament.sql'.
+Exit the psql CLI by using command '\q'.
+From the command line (should look like vagrant@vagrant-ubuntu-trusty-32:/$) run tournament.py 
+(command 'python tournament_test.py') to test the database. 
+The output from execution of tournament_test.py should end with "Success! All tests pass!".
