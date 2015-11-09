@@ -16,6 +16,7 @@ Navigate to the folder you downloaded, ensuring that any zipped files are unzipp
 Ensure all downloaded files are contained in the same folder.
 Using the Udacity-provided config, navigate to the VM (should be in the full-stack-nanodegree-vm/tournament directory)
 and power on and and sign into the machine.
+Navigate to /vagrant/tournament.
 To initially create the database, run the command 'psql' to open up the psql command line interface. Then import 
 the database using the command '\i tournament.sql'.
 Exit the psql CLI by using command '\q'.
